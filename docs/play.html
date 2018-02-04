@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音悦Tai-播放</title>
+    <link rel="stylesheet" href="../css/headstyle.css">
+    <link rel="stylesheet" href="../css/playsytle.css">
+    <script src="../js/jquery-1.6.js"></script>
+</head>
+<body>
+
+        <!--这是页面顶部的菜单栏，-->
+        <!--分为logo，左菜单，有菜单-->
+
+<div class="head">
+    <div  class="logo">
+        <a href="index.html" target="_blank">
+            <img src="../images/音悦台首页/1首页头/get-logo.png" width="238" height="50">
+        </a>
+    </div>
+    <div class="menu">
+        <ul>
+            <a href="#"><li class="menuclick">首页</li></a>
+            <a href="#"><li class="menuclick">MV</li></a>
+            <a href="#" id="pindao"><li class="menuclick">频道<span class="xiala"></span></li>
+            </a>
+            <ul>
+                <a href="#"><li class="menu_down">韩流频道</li></a>
+                <a href="#"><li class="menu_down">华语频道</li></a>
+                <a href="#"><li class="menu_down">欧美频道</li></a>
+                <a href="#"><li class="menu_down">日语频道</li></a>
+                <a href="#"><li class="menu_down">粉丝聚焦</li></a>
+            </ul>
+            <a href="#"><li class="menuclick">V榜</li></a>
+            <a href="#"><li class="menuclick">娱乐</li></a>
+            <a href="#" id="shangcheng"><li class="menuclick">商城</li></a>
+            <a href="#"><li class="menuclick">众筹</li></a>
+            <a href="#"><li class="menuclick">民俗文化</li></a>
+        </ul>
+    </div>
+    <div id="rightmenus">
+        <input type="text" placeholder="请输入要搜索的内容">
+        <div class="seach_down">
+            <li><a href="#"><div class="seach_down_icon">1</div>今年吃土也要看的演唱会</a></li>
+            <li><a href="#"><div class="seach_down_icon">2</div>认识的哥哥2017收视率暴涨</a></li>
+            <li><a href="#"><div class="seach_down_icon">3</div>五月天&hiphopMan合作</a></li>
+            <li><a href="#"><div class="seach_down_icon">4</div>万人大合唱林宥嘉《说谎》</a></li>
+            <li><a href="#"><div class="seach_down_icon">5</div>x小太阳林杨弹唱旧时光~</a></li>
+            <li><a href="#"><div class="seach_down_icon">6</div>罗志祥模仿GAI和PG ONE</a></li>
+            <li><a href="#"><div class="seach_down_icon">7</div>Animoji版本的《uptown》</a></li>
+            <li><a href="#"><div class="seach_down_icon">8</div>李易峰早年青涩采访曝光！</a></li>
+            <li><a href="#"><div class="seach_down_icon">9</div>帅少黄汐变身少女塔？</a></li>
+            <li><a href="#"><div class="seach_down_icon">10</div>突破次元壁！IU搭档方大同？</a></li>
+        </div>
+        <a href="#"><div id="seachicon"></div></a>
+        <a href="#"><div class="menuicon" id="icon1"></div></a>
+        <a href="#" id="icon2"><div class="menuicon"></div><span class="xiala"></span></a>
+        <ul>
+            <a href="#"><li class="menu_down">移动客户端</li></a>
+            <a href="#"><li class="menu_down">PC客户端</li></a>
+            <a href="#"><li class="menu_down">star明星直播</li></a>
+        </ul>
+        <a href="#" id="icon3"><div class="menuicon"></div><span class="xiala"></span></a>
+        <ul>
+            <a href="#"><li class="menu_down">上传视频</li></a>
+            <a href="#"><li class="menu_down">视频管理</li></a>
+            <a href="#"><li class="menu_down">悦单管理</li></a>
+        </ul>
+        <a href="#"><div class="menuicon" id="icon4"></div></a>
+        <a href="#"><div class="menuclick">登录</div></a>
+        <hr id="fenge">
+        <a href="#"><div class="menuclick">注册</div></a>
+    </div>
+</div>
+
+        <!--这是播放块-->
+        <!--分为Video,右侧菜单栏，底部标题栏，分享栏-->
+
+<div class="back">
+
+        <!--这是视频播放块-->
+        <!--分为Video,右侧菜单栏-->
+
+
+    <div class="playContent"><video id="myvideo" autoplay="autoplay" controls="controls" width="1000" height="560"></video>
+        <div class="playmenu">
+            <div><span>接下来播放</span></div>
+            <ul>
+                <li class="play_showed"><a href="#"><img src="../images/音悦台播放页/播放页主体/a1.jpg" width="160" height="90">
+                    <p>Heroine - MBC音乐中心现场版 18/01/20</p>
+                    <div></div><span>4.6万</span>
+                    <div></div>
+                </a></li>
+                <li><a href="#"><img src="../images/音悦台播放页/播放页主体/a2.jpg" width="160" height="90">
+                    <p>张韶涵纯粹Remix世界巡回演唱会发布会 17/07/21</p>
+                    <div></div><span>3.1万</span>
+                    <div></div>
+                </a></li>
+                <li><a href="#"><img src="../images/音悦台播放页/播放页主体/a3.jpg" width="160" height="90">
+                    <p>夏日必备 - 超解暑MV合集</p>
+                    <div></div><span>7.7万</span>
+                    <div></div>
+                </a></li>
+                <li><a href="#"><img src="../images/音悦台播放页/播放页主体/a4.jpg" width="160" height="90">
+                    <p>EP18 盛典直播间趣事揭秘</p>
+                    <div></div><span>7.7万</span>
+                    <div></div>
+                </a></li>
+                <li><a href="#"><img src="../images/音悦台播放页/播放页主体/a5.jpg" width="160" height="90">
+                    <p>EP182 V5了我的音悦V榜年度盛典</p>
+                    <div></div><span>41万</span>
+                    <div></div>
+                </a></li>
+                <li><a href="#"><img src="../images/音悦台播放页/播放页主体/a6.jpg" width="160" height="90">
+                    <p>十还记得吗 官方版</p>
+                    <div></div><span>70万</span>
+                    <div></div>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+        <!--这是底部标题栏-->
+
+
+    <div class="playTitle">
+        <div class="title_left">
+            <h2>Heroine - MBC音乐中心现场版<span>-- 宣美</span></h2>
+            <div></div><div>14</div><div></div>
+        </div>
+        <div class="title_right">
+            <h2>46,037<span> 次播放</span></h2>
+        </div>
+    </div>
+
+        <!--这是底部分享栏-->
+
+
+    <div class="playTitle">
+        <div class="share_left">
+        <span>分享到：</span>
+        <a href="#"><div></div></a>
+        <a href="#"><div></div></a>
+        <a href="#"><div></div></a>
+        <a href="#"><div></div></a>
+        </div>
+
+        <div class="share_right">
+            <a href="#"><div></div><span>手机看</span></a>
+            <a href="#"><div></div><span>71</span></a>
+            <a href="#"><div></div><span>4</span></a>
+            <a href="#"><div></div><span>688</span></a>
+            <a href="#"><div></div><span>举报</span></a>
+        </div>
+    </div>
+
+</div>
+
+        <!--这是主体栏-->
+
+<div class="contain">
+    <a href="#"><div class="longadv"></div></a>
+</div>
+
+</body>
+    <script src="../js/playVideo.js"></script>
+</html>
