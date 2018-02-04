@@ -1,0 +1,459 @@
+
+    /*轮播设计、主体设计和四个分栏的设计*/
+
+
+.contain{
+    width: 100%;
+    position: relative;
+    top:50px;
+    background-color: #F3F5F7;
+}
+
+    /*轮播的设计*/
+
+.carousel{
+    width: 1600px;
+    height: 530px;
+    margin: 0px auto;
+    position: relative;
+}
+.carousel img{
+    position: absolute;
+
+    z-index: 0;
+    opacity: 0;
+}
+
+.carousel img:first-child{
+    z-index: 1;
+    opacity: 1;
+}
+.carousel_menu{
+    width: 250px;
+    height: 400px;
+    border: 1.5px solid #fff;
+    background-color: rgba(3,3,3,0.5);
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    z-index: 2;
+}
+.carousel_menu ul{
+    width: 220px;
+    height: 400px;
+    position: relative;
+    left: 20px;
+}
+.carousel_menu li{
+    margin-top: 11px;
+    margin-right: 20px;
+    line-height: 26px;
+    font-size: 12px;
+}
+.carousel_menu a{
+    color: white;
+}
+.played li{
+    color: #53e3a6;
+}
+
+    /*对每个栏目的初始设计*/
+
+.partition_frist,.partition_second,.partition_three,.partition_four{
+    width: 1600px;
+    height: 530px;
+    margin: 8px auto;
+    position: relative;
+    top: -50px;
+    background-color: white;
+}
+
+.contain h3+div{
+    position: absolute;
+    top:50px;
+    left: 1200px;
+    z-index: 2;
+}
+
+.contain hr{
+    width: 93%;
+    height: 2px;
+    position: absolute;
+    top:100px;
+    left: 60px;
+    z-index: 1;
+    background-color: #DDDDDD;
+    border: none;
+}
+
+.content{
+    width: 1520px;
+    height: 200px;
+    position: absolute;
+    left: 50px;
+    top: 120px;
+
+}
+
+
+
+    /*版块1的设计*/
+
+
+.partition_frist>h3+div li{
+    list-style: none;
+    font-size: 15px;
+    float: left;
+    margin-right:35px ;
+    height: 50px;
+    line-height: 50px;
+}
+.partition_frist>h3+div li:first-child{
+    border-bottom: 2px solid #53e3a6;
+}
+.partition_frist>h3+div li:first-child a{
+    color: #53e3a6;
+}
+
+.partition_frist>h3+div li:last-child{
+    margin-right:20px ;
+}
+
+.before{
+    width: 26px;
+    height: 115px;
+    background-image: url("../images/音悦台首页/3首播块/turn_arrow2.png");
+    background-position:52px;
+    position: absolute;
+    top:50%;
+    left: 20px;
+    display: none;
+}
+.after{
+    width: 26px;
+    height: 115px;
+    background-image: url("../images/音悦台首页/3首播块/turn_arrow2.png");
+    background-position:26px;
+    position: absolute;
+    top:50%;
+    left: 1550px;
+}
+.before:hover{
+    background-position:1px;
+}
+.after:hover{
+    background-position:79px;
+}
+
+.outer{
+    width: 1450px;
+    height: 420px;
+    margin: auto;
+    position: relative;
+    top:14px;
+    overflow: hidden;
+}
+
+.inner{
+    width:4800px;
+    height: 420px;
+    position: absolute;
+}
+.inner h5,.partition_second h5{
+    width: 220px;
+    font-size: 16px;
+    margin-top: 6px;
+}
+.inner p,.partition_second p{
+    width: 200px;
+    margin-top: 7px;
+    margin-bottom: 30px;
+    font-size: 10px;
+    color: #A6A6A6;
+}
+.inner a:hover p,.partition_second a:hover p{
+    color: #53e3a6;
+}
+.inner>li,.partition_second li{
+    list-style: none;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+.inner>li:nth-child(6n){
+    margin-left: 30px;
+}
+.inner>li:first-child{
+    margin-left: 10px;
+}
+
+    /*版块一中小图的设计*/
+
+.x_outer{
+    width: 470px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.x_after,.x_before{
+    width: 13px;
+    height:25px;
+    position: absolute;
+    background-image: url("../images/音悦台首页/3首播块/arrow.png");
+    top:150px;
+    left: 10px;
+    z-index: 6;
+}
+.x_after{
+    background-position:13px 0px;
+    left: 450px;
+}
+.x_before:hover{
+    background-position: 0px 25px;
+}
+.x_after:hover{
+    background-position: 13px 25px;
+}
+.x_outer span{
+    width: 470px;
+    height: 400px;
+    float: left;
+    position: absolute;
+    z-index: 2;
+}
+.x_outer .x_next{
+    position: absolute;
+    left: 470px;
+}
+
+
+    /*版块2的设计*/
+
+
+
+.partition_second{
+    height: 330px;
+}
+.partition_second span:first-child{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/音悦台首页/5热播推荐块/zhuanhuan1.png");
+    background-size: cover;
+    position: absolute;
+    left:220px;
+    top:10px;
+}
+
+.partition_second span+span,.partition_four span{
+    font-size: 14px;
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    left:240px;
+    top:10px;
+    color: #A6A6A6;
+}
+
+.partition_second h3+div:hover span:first-child{
+    background-image: url("../images/音悦台首页/5热播推荐块/zhuanhuan2.png");
+}
+
+.partition_second h3+div:hover span:last-child,.partition_four span:hover{
+    color: #53e3a6;
+}
+
+.partition_second li {
+    margin-left: 30px;
+}
+
+
+        /*版块三的设计*/
+
+
+.partition_three{
+    height:510px;
+}
+.partition_three h3{
+    margin-top: 0px;
+    margin-right: 20px;
+    color: black;
+}
+.partition_three div{
+    width: 510px;
+    height: 40px;
+    position: relative;
+    top:60px;
+}
+
+.partition_three div:first-child li{
+    list-style: none;
+    float: left;
+
+}
+
+.partition_three div:first-child p{
+    width: 70px;
+    height: 18px;
+    text-align: center;
+    font-size: 13px;
+    border-left: 1px solid #dddddd;
+    position: relative;
+    top: 5px;
+}
+
+.partition_three .content{
+    width: 1690px;
+    height:380px;
+    position: relative;
+    top:75px;
+}
+
+.partition_three .content li{
+
+    width: 220px;
+    height:380px;
+    margin-right: 30px;
+    position: relative;
+    left: -130px;
+}
+
+.partition_three .content li:first-child{
+    list-style: none;
+    float: left;
+    width: 470px;
+    height:380px;
+    position: relative;
+    top:0px;
+    left:-140px;
+}
+.partition_three .content li:first-child h5{
+    font-size:18px;
+    margin-left: 20px;
+}
+.partition_three .content li:first-child p{
+    width: 420px;
+    font-size:13px;
+    margin-left: 20px;
+    color: #999999;
+}
+.partition_three .content li:first-child:hover p{
+    color: #53e3a6;
+}
+.partition_three .content li h5{
+    font-size: 14px;
+}
+.partition_three .content li span{
+    font-size: 12px;
+    color: #999999;
+    position: relative;
+    top:-3px;
+}
+
+.partition_three .content li div{
+    width: 220px;
+    height: auto;
+    position: relative;
+    top: 10px;
+}
+
+.partition_three .content li p{
+    width: 210px;
+    height: 50px;
+    margin: 10px;
+    font-size: 15px;
+    line-height: 30px;
+    border-top:1px solid #eeeeee ;
+}
+
+.partition_three .content li div:not(.p3_played) img{
+    display:none ;
+}
+.partition_three .p3_played img{
+    display: block;
+}
+.partition_three .p3_played p{
+    color: #53e3a6;
+}
+
+
+    /*版块四的设计*/
+
+
+.partition_four{
+    height: 470px;
+}
+.partition_four .content{
+    width: 1470px;
+    height: 269px;
+    position: absolute;
+    left: 70px;
+}
+.bigimg{
+    width: 470px;
+    height: 270px;
+    position: absolute;
+    top:0px;
+    border:1px solid rgba(229,229,229,1);
+    display: none;
+}
+
+.bigimg img:first-child{
+    position: absolute;
+}
+
+.bigimg div{
+    width: 200px;
+    height:270px;
+    position: absolute;
+    top: 0px;
+    left: 270px;
+    background-color: rgba(243,245,247,1);
+    color: black;
+}
+
+.bigimg div h5{
+    font-size: 15px;
+    margin: 20px;
+}
+.bigimg div img{
+    border-radius:50%;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+.bigimg span{
+    width: 90px;
+    position: absolute;
+    top:170px;
+    left: 80px;
+    color: black;
+}
+.bigimg p{
+    position: relative;
+    top:0px;
+    left: 80px;
+    color: #999999;
+    margin-top: 2px;
+}
+
+.partition_four li{
+    list-style: none;
+    float: left;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+.partition_four li:nth-child(2){
+    margin-left: 0px;
+}
+
+.partition_four li>p{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+}
+

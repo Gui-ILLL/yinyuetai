@@ -1,0 +1,262 @@
+.back{
+    width: 100%;
+    height: 700px;
+    background-color:
+    #151515;
+    position: relative;
+    top:50px;
+}
+.playContent{
+    width: 1200px;
+    height: 560px;
+    margin: 0px auto;
+    position: relative;
+    background-color: black;
+}
+
+.playContent .playmenu{
+    width: 200px;
+    height: 560px;
+    float: right;
+}
+
+.playContent .playmenu>div{
+    width: 200px;
+    height: 40px;
+    background-color: #272727;
+}
+.playmenu>div span{
+    color: #53e3a6;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+.playmenu>ul{
+    width: 200px;
+    height:500px;
+    overflow-y: scroll;
+}
+
+.playmenu>ul::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: black;
+}
+
+.playmenu>ul::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: black;
+}
+
+.playmenu>ul::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555555;
+}
+
+.playmenu li{
+    width:160px;
+    height:155px;
+    position: relative;
+    margin: 0px 15px;
+
+}
+
+.play_showed img{
+    border: 2px solid #53e3a6;
+}
+.play_showed p{
+    color: #53e3a6;
+}
+
+.playmenu li:not(.play_showed) p{
+    font-size: 13px;
+    color: white;
+}
+.playmenu li div{
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/音悦台播放页/播放页主体/play_count.png);
+    background-size: cover;
+    display: inline-block;
+    margin:5px 5px 0px 5px;
+    float: left;
+}
+.playmenu li span{
+    color: #7a7a7a;
+    font-size: 12px;
+    letter-spacing:2px;
+}
+
+.playmenu li span+div{
+    width: 160px;
+    height: 90px;
+    background-image: url("../images/音悦台播放页/播放页主体/video_hover2.png");
+    position: absolute;
+    top: -5px;
+    left:-5px;
+    display: none;
+}
+
+.playmenu li:hover div:last-child{
+    display: block;
+}
+
+
+.playTitle{
+    width: 1200px;
+    height: 55px;
+    position: relative;
+    margin: auto;
+}
+
+.playTitle .title_left,.playTitle .share_left{
+    width: auto;
+    height: 55px;
+    margin: 0px auto;
+    float: left;
+}
+
+.playTitle .title_left h2{
+    color: white;
+    line-height: 55px;
+    float: left;
+    font-size: 18px;
+}
+.playTitle .title_left span:first-child{
+    margin: 0px 10px;
+    color: #53e3a6;
+}
+.playTitle .title_left h2+div{
+    float: left;
+    width: 20px;
+    height: 22px;
+    margin: 16px 0px;
+    background: url("../images/音悦台播放页/播放页主体/icon_v3.png")-6px -92px no-repeat;
+}
+
+.playTitle .title_left h2+div+div{
+    float: left;
+    color: #53e3a6;
+    margin: 22px 0px 0px;
+    font-size: 10px;
+}
+
+.playTitle .title_left h2+div+div+div{
+    float: left;
+    width: 20px;
+    height: 22px;
+    margin: 20px 10px 0px;
+    background: url("../images/音悦台播放页/播放页主体/icon_v3.png")-24px -92px no-repeat;
+}
+
+.playTitle .title_right,.playTitle .share_right{
+    width: auto;
+    height:55px;
+    float: right;
+    line-height: 55px;
+}
+
+.playTitle .title_right h2{
+    color: #999999;
+    font-size:17px;
+
+}
+.playTitle .title_right h2 span{
+    color: #555555;
+    font-size:18px;
+}
+
+
+.playTitle .share_left>span{
+    display: inline-block;
+    width: auto;
+    height: 55px;
+    color: #999999;
+    font-size:15px;
+    line-height: 55px;
+    float: left;
+}
+
+.playTitle .share_left div{
+    width: 38px;
+    height: 30px;
+    background: url("../images/音悦台播放页/播放页主体/share.png")0px 0px no-repeat;
+    float: left;
+    margin-top:10px;
+}
+.playTitle .share_left a:nth-child(3) div{
+    background-position-x:-38px;
+}
+
+.playTitle .share_left a:nth-child(4) div{
+    background-position-x:-152px;
+}
+.playTitle .share_left a:nth-child(5) div{
+    background-position-x:-76px;
+}
+
+
+.playTitle .share_right span{
+    display: inline-block;
+    width: auto;
+    height: 55px;
+    color: #999999;
+    font-size:15px;
+    line-height: 55px;
+    float: left;
+}
+
+.playTitle .share_right div{
+    width: 27px;
+    height: 30px;
+    background: url("../images/音悦台播放页/播放页主体/icon_v3.png")0px 0px no-repeat;
+    float: left;
+    margin-top:12px;
+    margin-left: 50px;
+}
+
+.playTitle .share_right a:hover div{
+    background-position-y:-30px;
+}
+
+.playTitle .share_right a:nth-child(2) div{
+    background-position-x:-32px;
+}
+.playTitle .share_right a:nth-child(3) div{
+    background-position-x:-64px;
+}
+.playTitle .share_right a:nth-child(4) div{
+    background-position-x:-96px;
+}
+.playTitle .share_right a:nth-child(5) div{
+    background-position-x:-122px;
+}
+
+.playTitle .share_left a div:hover,.playTitle .share_right a div:hover{
+    background-position-y:-30px;
+}
+
+.playTitle .share_right a:hover span{
+    color: #F3F5F7;
+}
+
+.contain{
+    width: 100%;
+    position: relative;
+    top:50px;
+    background-color: #F3F5F7;
+}
+
+.longadv{
+    width: 1260px;
+    height: 105px;
+    margin: 25px auto;
+    position: relative;
+    background-image: url("../images/音悦台播放页/adv.jpg");
+}
+

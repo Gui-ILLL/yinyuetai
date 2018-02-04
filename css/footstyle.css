@@ -1,0 +1,39 @@
+
+
+    /*页脚的设计*/
+
+
+.foot{
+    position: relative;
+    top:40px;
+}
+.foot_link {
+    width: 800px;
+    height: 30px;
+    margin: auto;
+    margin-top:50px;
+}
+.foot_link li{
+    list-style: none;
+    text-align: center;
+    float: left;
+    margin-left: 60px;
+    font-size: 15px;
+}
+.foot_copyright{
+    clear: both;
+    width: 1000px;
+    height: 80px;
+    font-size: 10px;
+    color: #999;
+    margin: auto;
+    position: relative;
+}
+.foot_copyright p,.foot_copyright a{
+    text-align: center;
+    color: #999;
+}
+
+.foot_copyright a:hover{
+    color: #53e3a6;
+}

@@ -1,0 +1,283 @@
+
+
+    /*初始的基本设置*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "微软雅黑";
+}
+li{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover,p:hover{
+    color: #53e3a6;
+}
+p{
+    font-size: 10px;
+}
+h3{
+    margin: 50px 60px 20px;
+    display: inline-block;
+}
+
+
+    /*菜单栏的设计*/
+
+.head{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    z-index: 50;
+}
+.logo{
+    width: 250px;
+    height: 50px;
+    margin-left: -30px;
+    display: inline-block;
+    position: absolute;
+    left: 150px;
+}
+.menu{
+    height: 50px;
+    width: 800px;
+    display: inline-block;
+    position: absolute;
+    left: 350px;
+}
+.menuclick,.menuclick2{
+    width: 75px;
+    height: 50px;
+    list-style: none;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    color:#C5C5C5;
+    background-color:black;
+}
+.menuclick li{
+    width: 40px;
+    height: 50px;
+}
+.menuclick:hover,.menuclick2:hover{
+    background-color: rgba(178,178,178,0.2);
+    color: #53e3a6;
+}
+
+.menuclick2:hover .xiala,#icon2:hover>.xiala,#icon3:hover>.xiala{
+    background-position:-271px -18px;
+}
+
+
+#shangcheng{
+    background-image:url("../images/音悦台首页/1首页头/冒泡gif.gif");
+    width: 50px;
+}
+
+
+#pindao+ul,#icon2+ul,#icon3+ul{
+    width: 100px;
+    height: 0px;
+    position: absolute;
+    left: 150px;
+    top:50px;
+    transition: height 0.8s;
+    overflow: hidden;
+}
+#icon2+ul{
+    left: 280px;
+}
+#icon3+ul{
+    left: 350px;
+}
+.menu_down{
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    color:#C5C5C5;
+    background-color:black;
+}
+.menu_down:hover{
+    color: #F3F5F7;
+    background-color: #333;
+}
+#pindao:hover + ul,#pindao+ul:hover,
+#icon2:hover + ul,#icon2+ul:hover,
+#icon3:hover + ul,#icon3+ul:hover{
+    height: 280px;                      /*当鼠标移动到带有下拉的菜单选项时，出现二级菜单*/
+}
+
+#rightmenus{
+    width: 780px;
+    height: 30px;
+    position: absolute;
+    left: 1200px;
+    top: 0px;
+}
+
+#rightmenus>input{
+    width: 210px;
+    height: 27px;
+}
+#rightmenus>input:focus + div{
+    height: 300px;
+}
+
+.seach_down{
+    width: 215px;
+    height:0px;
+    background-color: rgba(10,10,10,0.9);
+    position: absolute;
+    top: 48px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+.seach_down li{
+    width: 215px;
+    height: 30px;
+}
+.seach_down li a{
+    color: white;
+    font-size: 12px;
+}
+.seach_down li:hover{
+    background-color:#666666;
+}
+.seach_down li div{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-color: #C5C5C5;
+    border-radius: 2px;
+    margin: 4px;
+    margin-left: 15px;
+    text-align: center;
+}
+.seach_down li:first-child div{
+    background-color: #FF0033;
+}
+.seach_down li:nth-child(2) div{
+    background-color: #09B3CD;
+}
+.seach_down li:nth-child(3) div{
+    background-color: #652D90;
+}
+
+#seachicon{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top:12px;
+    left: 185px;
+    background-image: url(../images/音悦台首页/1首页头/topbar_sprite4.png);
+    background-position:30px 52px;
+}
+
+.menuicon{
+    width: 24px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    top:10px;
+    margin-left:30px;
+    background-image: url(../images/音悦台首页/1首页头/new_topbar.png);
+    background-position: -22px 0px;
+}
+#icon1{
+    background-position: -172px 0px;
+}
+#icon1:hover{
+    background-position: -146px 0px;
+}
+#icon2>div{
+    background-position: -22px 0px;
+}
+#icon2:hover >div{
+    background-position: 2px 0px;
+}
+#icon3>div {
+    background-position: -121px 0px;
+}
+#icon3:hover >div{
+    background-position: -97px 0px;
+}
+#icon4{
+    background-position: -72px 0px;
+}
+#icon4:hover{
+    background-position: -49px 0px;
+}
+.xiala{
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    background: url(../images/音悦台首页/1首页头/topbar_sprite4.png) no-repeat -262px -18px;
+    position: relative;
+    left: 3px;
+    top: -3px;
+}
+
+#fenge{
+    height:15px;
+    width: 1px;
+    display: inline-block;
+    background-color:#cccccc;
+    border: none;
+    position: relative;
+    top:3px;
+}
+
+    /*左侧导航栏的设计*/
+
+.lead{
+    position: fixed;
+    width: 140px;
+    height: 500px;
+    position: fixed;
+    left: 0px;
+    top:10%;
+    z-index: 50;
+}
+
+.lead div{
+    width: 140px;
+    height: 55px;
+    margin-top: 20px;
+    position: relative;
+    left: -130px;
+    border-radius: 8px;
+    transition: transform .4s;
+    text-align: center;
+    line-height: 55px;
+    color: white;
+}
+
+.lead div:not(.showed):hover{
+    transform: translateX(120px);
+}
+
+.lead .showed{
+    left: -10px;
+}
+
+    /*小飞人的设计*/
+
+.flyboy{
+    width: 50px;
+    height: 66px;
+    position: fixed;
+    right: 30px;
+    top:100%;
+    z-index: 50;
+    background-image: url(../images/音悦台首页/14右侧小飞人/returntop.png);
+}
